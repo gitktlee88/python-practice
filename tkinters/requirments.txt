@@ -1,0 +1,22 @@
+OS: above Windows 95
+library: pyinstaller, tkinter
+text editor
+python 3 or above
+database: SQLITE3
+
+
+// Pyinstaller \\
+
+If I have a runnable package with __main__.py:
+
+foo/
+    __init__.py
+    __main__.py
+
+you can create a PyInstaller application from this package:
+
+pyinstaller --onefile __main__.py
+
+--(Note)
+As far as I'm concerned is
+not to use relative imports in your __main__.py module. 

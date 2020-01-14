@@ -1,0 +1,21 @@
+
+
+  OAUTH2 ABSTRACT PROTOCOL FLOW
+
++++++++++++++++                                 ++++++++++++++++++++
++             + ---1, Authorization Request --> +      User        +
++             +                                 + (resource owner) +
++             + <--2, Authorization Grant ----- +                  +
++             +                                 ++++++++++++++++++++
++             +
++             +                                 ++++++++++++++++++++
++ Application + ---3, Authorization Grant ----> +  Authorization   +
++   (client)  +                                 +     Server       +
++             + <--4, Access Token ------------ +                  +
++             +                                 +------------------+
++             + ---5, Access Token -----------> +    Resource      +
++             +                                 +      Server      +
++             + <--6, Protected Resource ------ +                  +
++             +                                 +                  +
++++++++++++++++                                 ++++++++++++++++++++
+                                                    Service API

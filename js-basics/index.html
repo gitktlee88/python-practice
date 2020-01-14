@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+
+<body>
+  <div id="test">
+    <h2>Let AJAX change this text</h2>
+    <button id="btn">Click JQuery</button>
+    <button type="button" onclick="loadDoc()">Load Doc</button>
+    <button type="button" onclick="loadJson()">Change Content</button>
+    <button type="button" onclick="clearBox('demo')">Clear</button>
+  </div>
+  <br>
+
+  <div
+    id="demo"
+    style="border: 1px solid powderblue; height:100px; width:500px; background:#f2f2f2"
+    >
+    <br/>
+  </div>
+  <br/><br/>
+
+  <h2><strong>Guess Between 1 and 100</strong></h2>
+
+  <div id="formDiv">
+		<input type="number" id="GuessInput" name="GuessInput" class="form-control" placeholder="Pick a number between 1 and 100">
+		<br/>
+		<input type="button" id="GuessButton" name="GuessButton" value="Guess!" class="btn btn-default">
+		<br/><br/>
+		<p id="GuessCount"></p>
+		<p id="Hint"></p>
+		<br/>
+		<!-- <img src="https://openclipart.org/download/257462/Checkmark.svg"> -->
+  </div>
+
+
+  <!-- <script src="index.js"> </script> -->
+  <!-- <script src="oop.js"> </script> -->
+  <script src="ajaxcall.js"> </script>
+  <script src="ajaxjson.js"> </script>
+  <script src="clear.js"> </script>
+  <script src="guessnum.js"> </script>
+
+</body>
+</html>
