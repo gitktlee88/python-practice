@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "env\\Scripts\\python.exe",
+    "files.trimTrailingWhitespace": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=C0111",
+        "--load-plugins",
+        "pylint_django"
+    ]
+}
