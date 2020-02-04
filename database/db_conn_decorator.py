@@ -47,6 +47,7 @@ def db_connector(func):
             cnn.rollback()
             logging.error("Database connection error")
             raise
+            sys.exit()
         else:
             cnn.commit()
         finally:

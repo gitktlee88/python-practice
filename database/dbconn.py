@@ -11,7 +11,7 @@ class MySQLdb_connection(object):
             connection_string = connection_string + ',' + db
 
         self.connection_string = connection_string.split(',')
-        #print(self.connection_string)
+        # print(self.connection_string)
         self.connector = None
 
     '''
